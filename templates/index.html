@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <header class="max-w-5xl mx-auto px-6 py-24 flex flex-col md:flex-row items-center justify-between gap-12 relative overflow-hidden">
+        <div class="flex-1 text-center md:text-left z-10">
+            <h1 class="text-6xl md:text-8xl font-black italic tracking-tighter leading-none mb-2 p3-blue p3-glow">
+                RAIN <span class="text-transparent" style="-webkit-text-stroke: 1.5px var(--p3-cyan);">ANOSA</span>
+            </h1>
+            <p class="text-2xl font-bold p3-blue italic tracking-tight">BSIT | Polytechnic University of the Philippines</p>
+            
+            <div class="mt-8 relative">
+                <div class="absolute inset-0 bg-cyan-500/10 blur-xl"></div>
+                <p class="relative text-slate-300 text-lg leading-relaxed max-w-xl border-l-4 p3-border pl-6 py-2 bg-white/5">
+                    This e-portfolio presents my <span class="font-bold text-white uppercase">Midterm Project</span> in Object-Oriented Programming. 
+                    A deep dive into logic, classes, and digital structure.
+                </p>
+            </div>
+        </div>
+        
+        <div class="relative">
+            <div class="absolute -inset-4 bg-cyan-500/20 skew-y-3"></div>
+            <div class="w-64 h-80 bg-black border-2 p3-border relative z-10 overflow-hidden shadow-[0_0_30px_rgba(0,212,255,0.3)]">
+                <img src="{{ url_for('static', filename='images/my_profile.jpeg') }}" alt="Profile Photo" class="w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-cyan-500/40 to-transparent pointer-events-none"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-20 border-t border-cyan-900/30">
+        <h2 class="text-4xl font-black italic tracking-tighter mb-12 uppercase">
+            Schoolwork <span class="p3-blue underline decoration-4 underline-offset-8">Highlights</span>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="group relative">
+                <div class="absolute inset-0 p3-bg-blue translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform"></div>
+                <div class="relative bg-black border-2 border-white p-8 h-full transition-transform hover:-translate-x-1 hover:-translate-y-1">
+                    <div class="text-cyan-500 font-black text-xs tracking-widest mb-2 italic uppercase">Object-Oriented</div>
+                    <h3 class="text-2xl font-black text-white mb-3 tracking-tighter uppercase italic">Java Programming</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Implementation of core OOP principles through practical activities.</p>
+                    <div class="h-1 w-full bg-cyan-900 overflow-hidden">
+                        <div class="h-full p3-bg-blue w-full"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative">
+                <div class="absolute inset-0 bg-white translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform"></div>
+                <div class="relative bg-black border-2 border-cyan-500 p-8 h-full transition-transform hover:-translate-x-1 hover:-translate-y-1">
+                    <div class="p3-blue font-black text-xs tracking-widest mb-2 italic uppercase">Academic Records</div>
+                    <h3 class="text-2xl font-black text-white mb-3 tracking-tighter uppercase italic">School Written Activities</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Collection of quizzes, seatworks, and activities for the midterm/finals period.</p>
+                    <div class="h-1 w-full bg-cyan-900 overflow-hidden">
+                        <div class="h-full p3-bg-blue w-4/5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative">
+                <div class="absolute inset-0 p3-bg-blue translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform"></div>
+                <div class="relative bg-black border-2 border-white p-8 h-full transition-transform hover:-translate-x-1 hover:-translate-y-1">
+                    <div class="text-cyan-500 font-black text-xs tracking-widest mb-2 italic uppercase">Critical Thinking</div>
+                    <h3 class="text-2xl font-black text-white mb-3 tracking-tighter uppercase italic">Brief Explanations and Learnings</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Reflective analysis of programming concepts, and comprehensive summaries of my learnings.</p>
+                    <div class="h-1 w-full bg-cyan-900 overflow-hidden">
+                        <div class="h-full p3-bg-blue w-2/3"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

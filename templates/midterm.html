@@ -1,0 +1,430 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <header class="max-w-5xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between items-end gap-6">
+        </header>
+    <header class="max-w-5xl mx-auto px-6 py-16 flex flex-col md:flex-row justify-between items-end gap-6">
+        <div>
+            <div class="inline-block p3-bg-blue text-black px-4 py-1 text-sm font-black uppercase skew-x-[-15deg] mb-4">
+                <span class="inline-block skew-x-[15deg]">Midterm Archive</span>
+            </div>
+            <h1 class="text-6xl font-black italic tracking-tighter uppercase leading-none">Academic <span class="p3-blue">Records</span></h1>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 pb-24 space-y-24">
+
+<!-- SEATWORKS PART -->
+        <section class="space-y-8">
+            <h2 class="text-3xl font-black italic border-l-8 p3-border pl-4 uppercase">Quizzes & Seatworks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white/5 border border-white/10 p-6 hover:border-p3-blue transition-all">
+                    <h3 class="text-xl font-bold p3-blue uppercase mb-4 italic">Midterm Quiz #1</h3>
+                    <div class="space-y-4 text-sm bg-black/40 p-4 border border-cyan-900/30">
+                        <p><span class="p3-blue font-bold text-xs uppercase">Note:</span> This hasn't been returned yet.</p>
+                        <p><span class="text-white font-bold text-xs uppercase underline">Therefore:</span> There won't be any content in it for now.</p>
+                        <p class="text-slate-500 italic">Will update when it has been returned. Thank you for understanding.</p>
+                    </div>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 hover:border-p3-blue transition-all">
+                    <h3 class="text-xl font-bold p3-blue uppercase mb-4 italic">Midterm Seatwork #1</h3>
+                    <div class="space-y-4 text-sm bg-black/40 p-4 border border-cyan-900/30">
+                        <p><span class="p3-blue font-bold text-xs uppercase">Note:</span> This hasn't been returned yet.</p>
+                        <p><span class="text-white font-bold text-xs uppercase underline">Therefore:</span> There won't be any content in it for now.</p>
+                        <p class="text-slate-500 italic">Will update when it has been returned. Thank you for understanding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- VARIABLES ACTIVITY -->
+<section class="space-y-12">
+    <div class="bg-black border-2 border-white p-6 relative">
+        <div class="absolute top-0 right-0 p3-bg-blue text-black font-black px-4 py-1 italic text-sm skew-x-[-20deg] translate-x-2">ACTIVITY_01</div>
+        
+        <h3 class="text-4xl font-black p3-blue italic uppercase tracking-tighter mb-8">Variables</h3>
+
+        <div class="grid lg:grid-cols-2 gap-10">
+            <div class="space-y-2">
+                <h4 class="text-[10px] font-black uppercase p3-blue tracking-widest">Code Analysis Archive</h4>
+                <div class="bg-slate-950 border-2 p3-border overflow-hidden p-4">
+                    <img src="{{ url_for('static', filename='images/act1.png') }}" alt="Variables Analysis" class="w-full">
+                </div>
+            </div>
+
+            <div class="flex flex-col justify-between">
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2 tracking-[0.2em]">Explanation</h4>
+                        <p class="text-sm text-slate-300 leading-relaxed italic">
+                            In this activity, we were tasked to identify the data type, variable type, and where the variable is stored.
+                            Moreover, we are tasked to identify the memory impact of the given variables. Lastly, we had to know the output of the given code.
+                        </p>
+                    </div>
+                    <div class="bg-white/5 p-5 border-l-2 p3-border">
+                        <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
+                        <p class="text-xs text-slate-400 italic leading-relaxed">
+                            I have learned the different data types of variables and where they are stored in. Additionally, I learned about the primitive and non-primitive
+                            (References) type variables. My mind has also been sharpened from identifying the output of the given code.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex justify-end">
+                    <a href="{{ url_for('static', filename='docs/BSIT2-4_Añosa_Rain_CodeAnalysisActivity#1.pdf') }}" 
+                       class="bg-white text-black text-[9px] font-black px-2 py-1 skew-x-[-10deg] hover:bg-p3-blue transition-colors flex items-center gap-2">
+                        <span class="inline-block skew-x-[10deg]">View Document (PDF)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- OPERATORS SECTION -->
+<section class="space-y-12">
+    <div class="bg-black border-2 border-white p-6 relative">
+        <div class="absolute top-0 right-0 p3-bg-blue text-black font-black px-4 py-1 italic text-sm skew-x-[-20deg] translate-x-2">ACTIVITY_02</div>
+        
+        <h3 class="text-4xl font-black p3-blue italic uppercase tracking-tighter mb-8">Operators</h3>
+
+        <div class="space-y-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                    <h4 class="text-[10px] font-black uppercase p3-blue tracking-widest">Source Code</h4>
+                    <div class="bg-slate-950 border-2 p3-border max-h-[60vh] overflow-y-auto code-scroll p-4 flex flex-col gap-6">
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/source_code_1_1.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 1">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/source_code_1_2.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 2">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/source_code_1_3.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 3">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/source_code_1_4.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 4">
+                        </div>
+                        <div class="group">
+                            <img src="{{ url_for('static', filename='images/source_code_1_5.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 5">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="text-[10px] font-black uppercase p3-blue tracking-widest">Output</h4>
+                    <div class="bg-slate-950 border-2 p3-border max-h-[60vh] overflow-y-auto code-scroll p-4 flex flex-col gap-6">
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/output_1_1.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Output 1">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/output_1_2.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Output 2">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/output_1_3.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Output 3">
+                        </div>
+                        <div class="group">
+                            <img src="{{ url_for('static', filename='images/output_1_4.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Output 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                
+                <div class="border border-white/20 p-5 flex flex-col justify-between">
+                    <div class="flex gap-4">
+                        <div class="w-1 h-12 p3-bg-blue"></div> <div>
+                            <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2">Explanation</h4>
+                            <p class="text-xs text-slate-300 italic leading-snug">
+                                This activity allowed us to understand what the various operators in Java does and it taught us how to apply these in different cases.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-white/20 p-5 flex flex-col justify-between min-h-[140px]">
+                    <div class="flex gap-4">
+                        <div class="w-1 h-12 p3-bg-blue"></div> <div>
+                            <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
+                            <p class="text-xs text-slate-200 italic leading-relaxed">
+                                I have learned what the different functions of the operators do in Java and how to apply them in a program.
+                                This activity also helped me with learning logic in order to accomplish tasks (e.g. finding even numbers).
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 flex justify-end">
+                        <a href="{{ url_for('static', filename='docs/BSIT2-4_Anosa_Rain_OperatorsActivity#2.pdf') }}" 
+                           class="bg-white text-black text-[9px] font-black px-2 py-1 skew-x-[-10deg] hover:bg-p3-blue transition-colors flex items-center gap-2">
+                            <span class="inline-block skew-x-[10deg]">View Document (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div> </div> </div> </section>
+<!-- ATM SECTION -->
+<section class="space-y-12">
+    <div class="bg-black border-2 border-white p-6 relative">
+        <div class="absolute top-0 right-0 p3-bg-blue text-black font-black px-4 py-1 italic text-sm skew-x-[-20deg] translate-x-2">ACTIVITY_03</div>
+    
+        <h3 class="text-4xl font-black p3-blue italic uppercase tracking-tighter mb-8">ATM with Transfer Feature</h3>
+
+        <div class="space-y-6">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                    <h4 class="text-[10px] font-black uppercase p3-blue tracking-widest">Source Code</h4>
+                    <div class="bg-slate-950 border-2 p3-border max-h-[60vh] overflow-y-auto code-scroll p-4 flex flex-col gap-6">
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/source_code_2_1.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 1">
+                        </div>
+                        <div class="group">
+                            <img src="{{ url_for('static', filename='images/source_code_2_2.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 2">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="text-[10px] font-black uppercase p3-blue tracking-widest">Output</h4>
+                    <div class="bg-slate-950 border-2 p3-border max-h-[60vh] overflow-y-auto code-scroll p-4 flex flex-col gap-6">
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/output_2_1.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Output 1">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/output_2_2.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Output 2">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/output_2_3.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Output 3">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/output_2_4.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Output 4">
+                        </div>
+                        <div class="group">
+                            <img src="{{ url_for('static', filename='images/output_2_4.png') }}" 
+                                 class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Output 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                
+                <div class="border border-white/20 p-5 flex flex-col justify-between">
+                    <div class="flex gap-4">
+                        <div class="w-1 h-12 p3-bg-blue"></div> <div>
+                            <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2">Explanation</h4>
+                            <p class="text-xs text-slate-300 italic leading-snug">
+                                We were tasked to create an ATM Withdrawal program with conditional statements, switch statements, and loops. Moreover, user input was necessary so we imported from the java.util module.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-white/20 p-5 flex flex-col justify-between min-h-[140px]">
+                    <div class="flex gap-4">
+                        <div class="w-1 h-12 p3-bg-blue"></div> <div>
+                            <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
+                            <p class="text-xs text-slate-200 italic leading-relaxed">
+                                This activity taught me how to accept user inputs and use various control flow statements to manage my program effectively.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 flex justify-end">
+                        <a href="{{ url_for('static', filename='docs/BSIT2-4_Anosa_Rain_ATMwithTransferFeature-2.pdf') }}" 
+                           class="bg-white text-black text-[9px] font-black px-2 py-1 skew-x-[-10deg] hover:bg-p3-blue transition-colors flex items-center gap-2">
+                            <span class="inline-block skew-x-[10deg]">View Document (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div> </div> </div> </section>
+
+<!-- STUDENT LIBRARY ACTIVITY -->
+<section class="space-y-12">
+    <div class="bg-black border-2 border-white p-6 relative">
+        <div class="absolute top-0 right-0 p3-bg-blue text-black font-black px-4 py-1 italic text-sm skew-x-[-20deg] translate-x-2">ACTIVITY_04</div>
+    
+        <h3 class="text-4xl font-black p3-blue italic uppercase tracking-tighter mb-8">Student Library Borrowing System with Penalty Counter</h3>
+
+        <div class="space-y-6">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                    <h4 class="text-[10px] font-black uppercase p3-blue tracking-widest">Source Code</h4>
+                    <div class="bg-slate-950 border-2 p3-border max-h-[60vh] overflow-y-auto code-scroll p-4 flex flex-col gap-6">
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/source_code_3_1.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 1">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/source_code_3_2.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 2">
+                        </div>
+                        <div class="group">
+                            <img src="{{ url_for('static', filename='images/source_code_3_3.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="text-[10px] font-black uppercase p3-blue tracking-widest">Output</h4>
+                    <div class="bg-slate-950 border-2 p3-border max-h-[60vh] overflow-y-auto code-scroll p-4 flex flex-col gap-6">
+                        <div class="group border-b border-cyan-900/30 pb-4"><img src="{{ url_for('static', filename='images/output_3_1.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 1"></div>
+                        <div class="group border-b border-cyan-900/30 pb-4"><img src="{{ url_for('static', filename='images/output_3_2.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 2"></div>
+                        <div class="group border-b border-cyan-900/30 pb-4"><img src="{{ url_for('static', filename='images/output_3_3.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 3"></div>
+                        <div class="group border-b border-cyan-900/30 pb-4"><img src="{{ url_for('static', filename='images/output_3_4.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 4"></div>
+                        <div class="group border-b border-cyan-900/30 pb-4"><img src="{{ url_for('static', filename='images/output_3_5.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 5"></div>
+                        <div class="group border-b border-cyan-900/30 pb-4"><img src="{{ url_for('static', filename='images/output_3_6.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 6"></div>
+                        <div class="group border-b border-cyan-900/30 pb-4"><img src="{{ url_for('static', filename='images/output_3_7.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 7"></div>
+                        <div class="group border-b border-cyan-900/30 pb-4"><img src="{{ url_for('static', filename='images/output_3_8.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 8"></div>
+                        <div class="group border-b border-cyan-900/30 pb-4"><img src="{{ url_for('static', filename='images/output_3_9.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 9"></div>
+                        <div class="group"><img src="{{ url_for('static', filename='images/output_3_10.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                
+                <div class="border border-white/20 p-5 flex flex-col justify-between">
+                    <div class="flex gap-4">
+                        <div class="w-1 h-12 p3-bg-blue"></div> <div>
+                            <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2">Explanation</h4>
+                            <p class="text-xs text-slate-300 italic leading-snug">
+                                This program requires user inputs to pay for their tuition and apply discounts if they have a scholarship. Error handling and validations
+                                were implemented to avoid complications with the discounts and payment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-white/20 p-5 flex flex-col justify-between min-h-[140px]">
+                    <div class="flex gap-4">
+                        <div class="w-1 h-12 p3-bg-blue"></div> <div>
+                            <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
+                            <p class="text-xs text-slate-200 italic leading-relaxed">
+                                The activity given to us allowed me to think thoroughly about the program logic in order to properly implement the error handling and validations
+                                that are necessary in the activity.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 flex justify-end">
+                        <a href="{{ url_for('static', filename='docs/BSIT2-4_Anosa_Rain_StudentPaymentSystem.pdf') }}" 
+                           class="bg-white text-black text-[9px] font-black px-2 py-1 skew-x-[-10deg] hover:bg-p3-blue transition-colors flex items-center gap-2">
+                            <span class="inline-block skew-x-[10deg]">View Document (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div> </div> </div> </section>
+
+<!-- Expense Tracker -->
+<section class="space-y-12">
+    <div class="bg-black border-2 border-white p-6 relative">
+        <div class="absolute top-0 right-0 p3-bg-blue text-black font-black px-4 py-1 italic text-sm skew-x-[-20deg] translate-x-2">ACTIVITY_05</div>
+    
+        <h3 class="text-4xl font-black p3-blue italic uppercase tracking-tighter mb-8">Personal Expense Tracker</h3>
+
+        <div class="space-y-6">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div class="space-y-2">
+                    <h4 class="text-[10px] font-black uppercase p3-blue tracking-widest">Source Code</h4>
+                    <div class="bg-slate-950 border-2 p3-border max-h-[60vh] overflow-y-auto code-scroll p-4 flex flex-col gap-6">
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/source_code_4_1.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 1">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/source_code_4_2.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 2">
+                        </div>
+                        <div class="group">
+                            <img src="{{ url_for('static', filename='images/source_code_4_3.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105 origin-top" alt="Code 3">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-2">
+                    <h4 class="text-[10px] font-black uppercase p3-blue tracking-widest">Output</h4>
+                    <div class="bg-slate-950 border-2 p3-border max-h-[60vh] overflow-y-auto code-scroll p-4 flex flex-col gap-6">
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/output_4_1.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 1">
+                        </div>
+                        <div class="group border-b border-cyan-900/30 pb-4">
+                            <img src="{{ url_for('static', filename='images/output_4_2.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 2">
+                        </div>
+                        <div class="group">
+                            <img src="{{ url_for('static', filename='images/output_4_3.png') }}" class="w-full transition-transform duration-500 group-hover:scale-105" alt="Out 3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                
+                <div class="border border-white/20 p-5 flex flex-col justify-between">
+                    <div class="flex gap-4">
+                        <div class="w-1 h-12 p3-bg-blue"></div> <div>
+                            <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2">Explanation</h4>
+                            <p class="text-xs text-slate-300 italic leading-snug">
+                                In this activity, we were tasked to create a program that tracks personal expenses. We implemented specific validation logic to ensure user spending does not exceed their predefined budget.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-white/20 p-5 flex flex-col justify-between min-h-[140px]">
+                    <div class="flex gap-4">
+                        <div class="w-1 h-12 p3-bg-blue"></div> <div>
+                            <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
+                            <p class="text-xs text-slate-200 italic leading-relaxed">
+                                This further improved my reasoning and logic capabilities through implementing program validations. Calculating the remaining budget sharpened my overall understanding of data manipulation.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 flex justify-end">
+                        <a href="{{ url_for('static', filename='docs/ExpenseTrackerAnosa-3.pdf') }}" 
+                           class="bg-white text-black text-[9px] font-black px-2 py-1 skew-x-[-10deg] hover:bg-p3-blue transition-colors flex items-center gap-2">
+                            <span class="inline-block skew-x-[10deg]">View Document (PDF)</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div> </div> </div> </section>
+
+        <section class="space-y-8">
+            <h2 class="text-3xl font-black italic border-l-8 p3-border pl-4 uppercase">Midterm Exam</h2>
+            <div class="bg-white p3-bg-blue text-black p-8 skew-x-[-2deg]">
+                <div class="skew-x-[2deg]">
+                    <h3 class="text-2xl font-black uppercase italic mb-4">Submission & Reflection</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="font-bold text-sm mb-4">Exam Reflection:</p>
+                            <p class="text-xs leading-relaxed italic">The midterm exam score and paper hasn't been returned yet. Will update when the exam has been returned. Thank you for understanding.</p>
+                        </div>
+                        <div class="flex items-center justify-end">
+                            <a href="#" class="bg-black text-white px-8 py-3 font-black uppercase text-xs tracking-widest hover:bg-slate-800 transition-all">View Exam Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+{% endblock %}

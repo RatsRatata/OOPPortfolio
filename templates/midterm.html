@@ -37,7 +37,7 @@
                         <div class="w-1 h-12 p3-bg-blue"></div> 
                         <div>
                             <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2">Explanation</h4>
-                            <p class="text-xs text-slate-300 italic leading-snug">
+                            <p class="text-xs text-slate-300 font-sans leading-snug">
                                 This quiz covers the topic of <span class="text-cyan-400 font-bold">Introduction to Java</span>. Wherein, our minds were challenged whether we truly learned anything about our previous lessons.
                             </p>
                         </div>
@@ -49,7 +49,7 @@
                         <div class="w-1 h-12 p3-bg-blue"></div> 
                         <div>
                             <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
-                            <p class="text-xs text-slate-200 italic leading-relaxed">
+                            <p class="text-xs text-slate-200 font-sans leading-relaxed">
                                 I managed to learn about the history of Java in the prior lessons, moreover, I managed to identify the syntaxes and other terminologies that exists within Java. Therefore, I was able to answer the questions presented on the quiz.
                             </p>
                         </div>
@@ -82,7 +82,7 @@
                         <div class="w-1 h-12 p3-bg-blue"></div> 
                         <div>
                             <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2">Explanation</h4>
-                            <p class="text-xs text-slate-300 italic leading-snug">
+                            <p class="text-xs text-slate-300 font-sans leading-snug">
                                 A hands-on exercise regarding <span class="text-cyan-400 font-bold">writing a code on paper</span>. This seatwork allowed us to utilize our knowledge and reasoning in Java Programming.
                             </p>
                         </div>
@@ -94,7 +94,7 @@
                         <div class="w-1 h-12 p3-bg-blue"></div> 
                         <div>
                             <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
-                            <p class="text-xs text-slate-200 italic leading-relaxed">
+                            <p class="text-xs text-slate-200 font-sans leading-relaxed">
                                 I have managed to apply our instructor's lessons about control-flow statements and use logic in writing the code on paper.
                             </p>
                         </div>
@@ -114,7 +114,8 @@
         
         <h3 class="text-4xl font-black p3-blue italic uppercase tracking-tighter mb-8">Variables</h3>
 
-        <div class="grid lg:grid-cols-2 gap-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            
             <div class="space-y-2">
                 <h4 class="text-[10px] font-black uppercase p3-blue tracking-widest">Activity Image</h4>
                 <div class="bg-slate-950 border-2 p3-border overflow-hidden p-4">
@@ -122,30 +123,41 @@
                 </div>
             </div>
 
-            <div class="flex flex-col justify-between">
-                <div class="space-y-6">
-                    <div>
-                        <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2 tracking-[0.2em]">Explanation</h4>
-                        <p class="text-sm text-slate-300 leading-relaxed italic">
-                            In this activity, we were tasked to identify the data type, variable type, and where the variable is stored.
-                            Moreover, we are tasked to identify the memory impact of the given variables. Lastly, we had to know the output of the given code.
-                        </p>
-                    </div>
-                    <div class="bg-white/5 p-5 border-l-2 p3-border">
-                        <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
-                        <p class="text-xs text-slate-400 italic leading-relaxed">
-                            I have learned the different data types of variables and where they are stored in. Additionally, I learned about the primitive and non-primitive
-                            (References) type variables. My mind has also been sharpened from identifying the output of the given code.
-                        </p>
+            <div class="flex flex-col gap-4 justify-start pt-6">
+                
+                <div class="border border-white/20 p-5">
+                    <div class="flex gap-4">
+                        <div class="w-1 h-12 p3-bg-blue"></div> 
+                        <div>
+                            <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2 tracking-[0.2em]">Explanation</h4>
+                            <p class="text-xs text-slate-300 font-sans leading-snug">
+                                In this activity, we were tasked to identify the data type, variable type, and where the variable is stored.
+                                Moreover, we are tasked to identify the memory impact of the given variables. Lastly, we had to know the output of the given code.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="mt-8 flex justify-end">
-                    <a href="{{ url_for('static', filename='docs/BSIT2-4_Añosa_Rain_CodeAnalysisActivity#1.pdf') }}" 
-                       class="bg-white text-black text-[9px] font-black px-2 py-1 skew-x-[-10deg] hover:bg-p3-blue transition-colors flex items-center gap-2">
-                        <span class="inline-block skew-x-[10deg]">View Document (PDF)</span>
-                    </a>
+                <div class="border border-white/20 p-5 bg-white/5 flex flex-col justify-between min-h-[140px]">
+                    <div class="flex gap-4">
+                        <div class="w-1 h-12 p3-bg-blue"></div> 
+                        <div>
+                            <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
+                            <p class="text-xs text-slate-200 font-sans leading-relaxed">
+                                I have learned the different data types of variables and where they are stored in. Additionally, I learned about the primitive and non-primitive
+                                (References) type variables. My mind has also been sharpened from identifying the output of the given code.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 flex justify-end">
+                        <a href="{{ url_for('static', filename='docs/BSIT2-4_Añosa_Rain_CodeAnalysisActivity#1.pdf') }}" 
+                           class="bg-white text-black text-[9px] font-black px-2 py-1 skew-x-[-10deg] hover:bg-p3-blue transition-colors flex items-center gap-2">
+                            <span class="inline-block skew-x-[10deg]">View Document (PDF)</span>
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -214,7 +226,7 @@
                     <div class="flex gap-4">
                         <div class="w-1 h-12 p3-bg-blue"></div> <div>
                             <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2">Explanation</h4>
-                            <p class="text-xs text-slate-300 italic leading-snug">
+                            <p class="text-xs text-slate-300 font-sans leading-snug">
                                 This activity allowed us to understand what the various operators in Java does and it taught us how to apply these in different cases.
                             </p>
                         </div>
@@ -225,7 +237,7 @@
                     <div class="flex gap-4">
                         <div class="w-1 h-12 p3-bg-blue"></div> <div>
                             <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
-                            <p class="text-xs text-slate-200 italic leading-relaxed">
+                            <p class="text-xs text-slate-200 font-sans leading-relaxed">
                                 I have learned what the different functions of the operators do in Java and how to apply them in a program.
                                 This activity also helped me with learning logic in order to accomplish tasks (e.g. finding even numbers).
                             </p>
@@ -298,7 +310,7 @@
                     <div class="flex gap-4">
                         <div class="w-1 h-12 p3-bg-blue"></div> <div>
                             <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2">Explanation</h4>
-                            <p class="text-xs text-slate-300 italic leading-snug">
+                            <p class="text-xs text-slate-300 font-sans leading-snug">
                                 We were tasked to create an ATM Withdrawal program with conditional statements, switch statements, and loops. Moreover, user input was necessary so we imported from the java.util module.
                             </p>
                         </div>
@@ -309,7 +321,7 @@
                     <div class="flex gap-4">
                         <div class="w-1 h-12 p3-bg-blue"></div> <div>
                             <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
-                            <p class="text-xs text-slate-200 italic leading-relaxed">
+                            <p class="text-xs text-slate-200 font-sans leading-relaxed">
                                 This activity taught me how to accept user inputs and use various control flow statements to manage my program effectively.
                             </p>
                         </div>
@@ -373,7 +385,7 @@
                     <div class="flex gap-4">
                         <div class="w-1 h-12 p3-bg-blue"></div> <div>
                             <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2">Explanation</h4>
-                            <p class="text-xs text-slate-300 italic leading-snug">
+                            <p class="text-xs text-slate-300 font-sans leading-snug">
                                 This program requires user inputs to pay for their tuition and apply discounts if they have a scholarship. Error handling and validations
                                 were implemented to avoid complications with the discounts and payment.
                             </p>
@@ -385,7 +397,7 @@
                     <div class="flex gap-4">
                         <div class="w-1 h-12 p3-bg-blue"></div> <div>
                             <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
-                            <p class="text-xs text-slate-200 italic leading-relaxed">
+                            <p class="text-xs text-slate-200 font-sans leading-relaxed">
                                 The activity given to us allowed me to think thoroughly about the program logic in order to properly implement the error handling and validations
                                 that are necessary in the activity.
                             </p>
@@ -449,7 +461,7 @@
                     <div class="flex gap-4">
                         <div class="w-1 h-12 p3-bg-blue"></div> <div>
                             <h4 class="text-[10px] font-black uppercase text-slate-500 mb-2">Explanation</h4>
-                            <p class="text-xs text-slate-300 italic leading-snug">
+                            <p class="text-xs text-slate-300 font-sans leading-snug">
                                 In this activity, we were tasked to create a program that tracks personal expenses. We implemented specific validation logic to ensure user spending does not exceed their predefined budget.
                             </p>
                         </div>
@@ -460,7 +472,7 @@
                     <div class="flex gap-4">
                         <div class="w-1 h-12 p3-bg-blue"></div> <div>
                             <h4 class="text-[10px] font-black uppercase p3-blue mb-2 tracking-[0.2em]">Learnings</h4>
-                            <p class="text-xs text-slate-200 italic leading-relaxed">
+                            <p class="text-xs text-slate-200 font-sans leading-relaxed">
                                 This further improved my reasoning and logic capabilities through implementing program validations. Calculating the remaining budget sharpened my overall understanding of data manipulation.
                             </p>
                         </div>
@@ -478,14 +490,14 @@
 
 <!-- EXAM SECTION -->
         <section class="space-y-8">
-            <h2 class="text-3xl font-black italic border-l-8 p3-border pl-4 uppercase">Midterm Exam</h2>
+            <h2 class="text-3xl font-black font-sans border-l-8 p3-border pl-4 uppercase">Midterm Exam</h2>
             <div class="bg-white p3-bg-blue text-black p-8 skew-x-[-2deg]">
                 <div class="skew-x-[2deg]">
-                    <h3 class="text-2xl font-black uppercase italic mb-4">Submission & Reflection</h3>
+                    <h3 class="text-2xl font-black uppercase font-sans mb-4">Submission & Reflection</h3>
                     <div class="grid md:grid-cols-2 gap-8">
                         <div>
                             <p class="font-bold text-sm mb-4">Exam Reflection:</p>
-                            <p class="text-xs leading-relaxed italic">The exams allowed me to utilize everything I have learned so far in Object Oriented Programming. It was tough but I managed to apply logic and reasoning in answerin the questions.</p>
+                            <p class="text-xs leading-relaxed font-sans">The exams allowed me to utilize everything I have learned so far in Object Oriented Programming. It was tough but I managed to apply logic and reasoning in answering the questions.</p>
                         </div>
                         <div class="flex items-center justify-end">
                             <a href="#" class="bg-black text-white px-8 py-3 font-black uppercase text-xs tracking-widest hover:bg-slate-800 transition-all">View Exam Code</a>
